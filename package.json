@@ -1,0 +1,11 @@
+{
+  "name": "how-to-public-key-crypto",
+  "version": "1.0.0",
+  "description": "a short example of using node-sodium for public key cryptography.",
+  "main": "index.js",
+  "author": "Jacob Burden",
+  "license": "MIT",
+  "dependencies": {
+    "sodium": "^1.0.22"
+  }
+}
