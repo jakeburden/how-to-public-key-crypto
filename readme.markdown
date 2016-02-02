@@ -17,9 +17,9 @@
 
 ----
 
-This walkthrough follows a client-server model.  The goal is to see how a client can send a message to the server, and how the server can trust that the message had come from the client (without usernames or passwords!).
+This walkthrough follows a client-server model.  The goal is to see how a client can send a message to the server, and how the server can trust that the message had come from the client (without usernames or passwords)!
 
-For brevity, there is not actual setting up of a server.  This just repo just contains a "client" directory and a "server" directory. They interact with each other through the file system.
+For brevity, we are not setting up a real server.  This just repo just contains a "client" directory and a "server" directory. They interact with each other through the file system.
 
 ----
 
