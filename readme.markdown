@@ -19,7 +19,7 @@
 
 This walkthrough follows a client-server model.  The goal is to see how a client can send a message to the server, and how the server can trust that the message had come from the client (without usernames or passwords)!
 
-For brevity, we are not setting up a real server.  This just repo just contains a "client" directory and a "server" directory. They interact with each other through the file system.
+For brevity, we are not setting up a real server.  Instead, this repo just contains a "client" directory and a "server" directory. They interact with each other through the file system.
 
 ----
 
@@ -29,7 +29,7 @@ For brevity, we are not setting up a real server.  This just repo just contains 
 2. inspect `gen.js`
 3. run `node gen`
 
-Here we are generating a key pair, which consists of a public key and a secret (or private) key. Every is allowed you know your public key, but you have to keep your secret key a secret.
+Here we are generating a key pair, which consists of a public key and a secret (or private) key. Everyone is allowed to know your public key, but you have to keep your secret key a secret.
 
 `gen.js` stores your keypair in the `client` directory and sends your public key to the `server` directory.  The server will use your public key to verify any messages you send it that are signed with your secret key.
 
