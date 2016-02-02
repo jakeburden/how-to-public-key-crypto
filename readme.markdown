@@ -33,12 +33,16 @@ Here we are generating a key pair, which consists of a public key and a secret (
 
 `gen.js` stores your keypair in the `client` directory and sends your public key to the `server` directory.  The server will use your public key to verify any messages you send it that are signed with your secret key.
 
+----
+
 #### creating a digital signature
 
 1. inspect `sign.js`
 2. run `node sign`
 
 In `sign.js`, we pull your secret key from your keypair.  I also wrote a small message; you can change it if you want.  With your secret key and your message `sign.js` will generate a detached digital signature.  Anyone with you public key can verify that you sent that message by testing it against your digital signature.  After your signature has been created a payload object containing your message and signature is sent to the server.
+
+----
 
 #### server verifying your message
 
